@@ -1,0 +1,25 @@
+<div class="home-container">
+   <nav class="navbar">
+     <div class="navbar-brand">
+       <span class="ride">Ride</span><span class="on">ON</span>
+     </div>
+     <div class="navbar-links">
+       <button class="login-button" (click)="navigateToLogin()">Login</button> 
+       <button class="login-button" (click)="navigateToRegister()">Register</button>
+     </div>
+   </nav>
+   <div>
+     <video autoplay loop [muted]="true" plays-inline class="background-video" oncanplay="this.parentElement.classList.add('video-loaded')">
+       <source src="assets/1.mp4" type="video/mp4">
+       Your browser does not support the video tag.
+     </video>
+     <div class="content">
+       <h1>RideOn Rentals</h1>
+       <br>
+       <h4 class="iceberg-regular">Renting made easy.</h4>
+     </div>
+   </div>
+ </div>
+ <footer class="footer">
+  <p>&copy; 2025 RideOn Rentals. All rights reserved.</p>
+</footer>
